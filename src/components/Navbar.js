@@ -50,7 +50,10 @@ const Navbar = () => {
             </a>
             <button onClick={() => setIsModalOpen(true)} className="location-button">
               <p>ALAMAT PENGANTARAN</p>
-              <h4>Tokopedia Tower <span><ExpandMoreIcon /></span></h4>
+              <h4>
+                <span>Tokopedia Tower</span>
+                <span className="location-expand"><ExpandMoreIcon /></span>
+              </h4>
             </button>
           </div>
 
@@ -60,7 +63,7 @@ const Navbar = () => {
                   <CloseOutlinedIcon />
                 </button>
                 <div className="modal-text">
-                  <h3>Cek makanan yang tersedia di lokasi kamu</h3>
+                  <h3>Cek makanan yang tersedia di lokasi kamu!</h3>
                   <div className="search-container">
                     <RoomOutlinedIcon className="search-icon" />
                     <input onChange={onChangeSearch} className="search-location" type="text"/>
@@ -69,17 +72,17 @@ const Navbar = () => {
                     showSearch && (
                       <div className="search-result">
                         <div className="result-detail">
-                          <RoomOutlinedIcon />
+                          <RoomOutlinedIcon className="location-icon" />
                           <div className="result-text">
                             <p>Kulina</p>
-                            <p>jl abc gang def komplex zef</p>
+                            <p className="sub-address">jl abc gang def komplex zef</p>
                           </div>
                         </div>
                         <div className="result-detail">
-                          <RoomOutlinedIcon />
+                          <RoomOutlinedIcon className="location-icon"/>
                           <div className="result-text">
                             <p>Kulina</p>
-                            <p>jl abc gang def komplex zef</p>
+                            <p className="sub-address">jl abc gang def komplex zef</p>
                           </div>
                         </div>              
                       </div>
@@ -126,10 +129,10 @@ const Navbar = () => {
 
           <div style={showDinner ? {display: "block"} : {display: "none"}} className="having-time">
             <button onClick={() => setdinnerActive(!dinnerActive)} className="lunch" 
-              style={dinnerActive ? {backgroundColor: "#424749"} : {backgroundColor: "white"}}
+              style={dinnerActive ? {backgroundColor: "#424749", color:"white"} : {backgroundColor: "white"}}
             >Lunch</button>
             <button
-              style={dinnerActive ? {backgroundColor: "white"} : {backgroundColor: "#424749"} }
+              style={dinnerActive ? {backgroundColor: "white"} : {backgroundColor: "#424749", color:"white"} }
             onClick={() => setdinnerActive(!dinnerActive)} className="dinner">Dinner</button>
           </div>     
 

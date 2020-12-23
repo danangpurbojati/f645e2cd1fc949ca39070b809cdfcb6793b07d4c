@@ -1,174 +1,190 @@
 .navbar{
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index: 1;
-  }
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+
+/* Location Style */
+.location{
+  display: flex;
+  align-items: center;
+  position: sticky;
+} 
   
-  .location{
-    display: flex;
-    align-items: center;
-    position: sticky;
-  }
+.back-button{
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+  
+.location-button{
+  text-align: left;
+  background-color: white;
+  border: none;
+  margin-left: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+  
+.location-button p{
+  font-size: 8px;
+  color: #6e7679;
+  margin-bottom: 4px;
+}
+  
+.location-button h4{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+  
+.location-expand{
+  color: #f9423a;
+}
+/* end location */
+
+
+
+/* Modal */
+.modal-container{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  overflow: auto;
+}
+  
+.modal-content{
+  background-color: white;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  bottom: 0;
+}
+  
+.close-button{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+  
+.modal-text{
+  margin-top: 40px;
+  padding: 16px;
+}
+  
+.search-container{
+  position: relative;
+  margin: 8px 0;
+}
+  
+.search-location{
+  width: 100%;
+  padding: 8px 8px 8px 32px;
+  border: 1px solid #f1f1f2;
+}
+  
+.search-icon{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f9423a;
+}
+  
+.result-detail{
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f2;
+}
+
+.result-text{
+  margin-left: 16px;
+  color: #424749;
+  font-weight: bold;
+}
+
+.sub-address{
+  margin-top: 4px;
+  color: #6e7679;
+  font-weight: normal;
+}
+
+.location-icon{
+  color: #6e7679;
+}
+/* End Modal */
+
+
+
+  
+ /*Date  */
+.date-container{
+  padding: 16px;
+  border-bottom: 1px solid #f1f1f2;
+}  
+  
+.date{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+  
+.day{
+  font-size: 12px;
+}
+
+.date-number{
+  font-size: 16px;
+  font-weight: bold;
+}
+/*End Date*/
   
   
-  .back-button{
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-  }
+
+/* having periods */
+.having-time{
+  padding: 16px;
+}
   
-  .location-button{
-    text-align: left;
-    background-color: white;
-    border: none;
-    margin-left: 16px;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
+.having-time button{
+  width: 50%;
+  padding: 8px;
+  border: 1px solid #f1f1f2;
+  cursor: pointer;
+}
   
-  .location-button p{
-    font-size: 8px;
-    color: #6e7679;
-    margin-bottom: 4px;
-  }
+.lunch{
+  border-radius: 4px 0 0 4px;
+  color: #6e7679;
+  background-color: white;
+}
   
-  .location-button h4{
-    font-size: 16px;
-  }
+.dinner{
+  border-radius: 0 4px 4px 0;
+  color: #6e7679;  
+  background-color: white;
+}
   
-  .location-button h4 span{
-    color: #f9423a;
-  }
-  
-  .modal-container{
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    overflow: auto;
-  }
-  
-  .modal-content{
-    background-color: white;
-    position: absolute;
-    height: 80%;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  .close-button{
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    border: none;
-    cursor: pointer;
-    background-color: white;
-  }
-  
-  .modal-text{
-    margin-top: 40px;
-    padding: 16px;
-  }
-  
-  .search-container{
-    position: relative;
-  }
-  
-  .search-location{
-    width: 100%;
-    padding: 8px 8px 8px 32px;
-    border: 1px solid #f1f1f2;
-  }
-  
-  .search-icon{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #f9423a;
-  }
-  
-  .result-detail{
-    display: flex;
-    align-items: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #f1f1f2;
-  }
-  .result-text{
-    margin-left: 16px;
-  }
-  
-  
-  
-  
-  
-  
-  
-  .date-container{
-    padding: 16px;
-    border-bottom: 1px solid #f1f1f2;
-  }
-  
-  
-  .date{
-    /* background-color: #424749;
-    color: white; */
-    width: 40px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .day{
-    font-size: 12px;
-  }
-  
-  .date-number{
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  
-  
-  
-  
-  
-  
-  .having-time{
-    padding: 16px;
-  }
-  
-  .having-time button{
-    width: 50%;
-    padding: 8px;
-    border: 1px solid #f1f1f2;
-    cursor: pointer;
-  }
-  
-  .lunch{
-    border-radius: 4px 0 0 4px;
-    color: #6e7679;
-    background-color: white;
-  }
-  
-  .dinner{
-    border-radius: 0 4px 4px 0;
-    color: #6e7679;  
-    background-color: white;
-  }
-  
-  .btn-active{
-    background-color: #424749;
-    color: white;
-  }
+.btn-active{
+  background-color: #424749;
+  color: white;
+}
+/*end having periods */
   

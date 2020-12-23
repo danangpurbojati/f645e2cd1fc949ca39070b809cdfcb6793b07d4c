@@ -30,9 +30,12 @@ const Menu = () => {
                         <StyledRating precision={0.5} name="disabled" value={meal.rating} disabled />
                         </div>
                         <h3 className="card-text-title">{meal.name}</h3>
-                        <p className="card-text-subtext">by kulina Uptown Lunch</p>
+                        <ul className="card-text-subtext">
+                            <li>by kulina</li>
+                            <li>Uptown Lunch</li>                             
+                        </ul>
                         <div className="price">
-                        <p>{numberWithCommas(meal.price)}</p>
+                        <p>Rp {numberWithCommas(meal.price)}</p>
                         <button value={meal.price} onClick={handleAddClick} className="add-button">
                             ADD &#43;
                         </button>
